@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$senha = "qwe123";
+$senha = "";
 $db = "aula_php";
 
 $conexao = mysqli_connect($servidor,$user,$senha,$db);
