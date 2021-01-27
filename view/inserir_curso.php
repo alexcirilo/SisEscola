@@ -5,17 +5,17 @@ if (!isset($_GET['editar'])) { ?>
     <hr /><br>
 
     <form action="processa_curso.php" method="POST">
-        <div class="form-control col-6">
+        <div class="form-control">
             <label>Curso:</label>
             <input type="text" name="nome_curso" placeholder="Insira o nome do curso">
-        </div>
+        
         <br><br>
-        <div>
+        
             <label>Cargo Horária: </label>
             <input type="text" name="cargo_horaria" placeholder="Insira a Cargo horária">
-        </div>
+        
 
-        <div><br>
+        <br>
             <hr />
             <input type="submit" value="salvar">
         </div>
@@ -44,7 +44,7 @@ if (!isset($_GET['editar'])) { ?>
 
                 <div><br>
                     <hr />
-                    <input type="submit" value="salvar">
+                    <input class="btn btn-success" type="submit" value="salvar">
                 </div>
             </form>
 

@@ -18,3 +18,8 @@ $query = "select ac.id_aluno_curso, al.nome_aluno, c.nome_curso
             and c.id_curso = ac.id_curso";
 $consulta_matriculas = mysqli_query($conexao,$query);
 
+
+$query = "select * from regiao_integracao";
+
+$consulta_regiao = mysqli_query($conexao,$query);
+

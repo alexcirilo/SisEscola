@@ -1,5 +1,6 @@
-<a href="?pagina=inserir_aluno">Inserir novo aluno</a>
-<table style="border:1px solid #ccc; width:100%">
+<a class="btn btn-success" href="?pagina=inserir_aluno">Inserir novo aluno</a>
+<table class="table">
+<br><hr/>
 <tr>
     <th>Nome Aluno</th>
     <th>Data de Nascimento</th>

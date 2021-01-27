@@ -24,19 +24,18 @@ if (!isset($_GET['editar'])) { ?>
             <h1>Editar Aluno</h1>
             <hr /><br>
             <form action="view/edita_aluno.php" method="POST">
-                <div class="form col-6">
-                    <input class="form-control" type="hidden" name="id_aluno" value="<?php echo $linha['id_aluno'] ?>">
 
-                    <label>Nome:</label>
+                <input class="form-control" type="hidden" name="id_aluno" value="<?php echo $linha['id_aluno'] ?>">
 
-                    <input class="form-control" type="text" name="nome_aluno" placeholder="Insira o nome do Aluno" value="<?php echo $linha['nome_aluno'] ?>">
-                    <br>
-                    <label>Data Nascimento:</label>
-                    <input class="form-control" type="text" name="data_nascimento" placeholder="dd/MM/yyyy" value="<?php echo $linha['data_nascimento'] ?>">
-                    <div>
-                        <hr /><br>
-                        <input type="submit" value="salvar">
-                    </div>
+                <label>Nome:</label>
+
+                <input class="form-control" type="text" name="nome_aluno" placeholder="Insira o nome do Aluno" value="<?php echo $linha['nome_aluno'] ?>">
+                <br>
+                <label>Data Nascimento:</label>
+                <input class="form-control" type="text" name="data_nascimento" placeholder="dd/MM/yyyy" value="<?php echo $linha['data_nascimento'] ?>">
+                <div>
+                    <hr /><br>
+                    <input type="submit" value="salvar">
                 </div>
             </form>
 

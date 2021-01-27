@@ -1,10 +1,11 @@
-<a href="?pagina=inserir_curso">Inserir novo Curso</a>
-<table style="border:1px solid #ccc; width:100%">
+<a class="btn btn-success" href="?pagina=inserir_curso">Inserir novo Curso</a>
+<br><hr/>
+<table class="table">
 <tr>
-    <td>Nome Curso</td>
-    <td>Cargo Horária</td>
-    <td>Deletar</td>
-    <td>Editar</td>
+    <th>Nome Curso</th>
+    <th>Cargo Horária</th>
+    <th>Deletar</th>
+    <th>Editar</th>
 </tr>
 
 <?php
