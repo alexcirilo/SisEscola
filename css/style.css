@@ -44,7 +44,7 @@ footer{
 
 #menu a{
     text-decoration: none;
-    padding: 25px 35px;
+    padding: 35px 35px;
     color: #e3e3d3;
     text-shadow: 1px 1px 1px #111;
     
@@ -52,5 +52,6 @@ footer{
 
 #menu a:hover{
     background-color: #44b874;
+    
 
 }
