@@ -1,4 +1,6 @@
 <?php
+# iniciar sessão
+session_start();
 
 #Base de dados
 include 'db.php';
@@ -9,13 +11,18 @@ include 'header.php';
 
 #Conteúdo
 
-if(isset($_GET['pagina'])){
-    $pagina = $_GET['pagina'];
-}else{
-    $pagina = 'home';
+if (isset($_SESSION['login'])) {
+    if (isset($_GET['pagina'])) {
+        $pagina = $_GET['pagina'];
+    } else {
+        $pagina = 'cursos';
+    }
+} else {
+    $pagina = "home";
 }
 
-switch($pagina){
+
+switch ($pagina) {
     case 'cursos':
         include 'view/cursos.php';
         break;
@@ -27,21 +34,21 @@ switch($pagina){
         break;
     case 'municipios':
         include 'view/municipio.php';
-        break;     
+        break;
     case 'inserir_aluno':
         include 'view/inserir_aluno.php';
         break;
     case 'inserir_curso':
         include 'view/inserir_curso.php';
         break;
-    case 'inserir_matricula' :
+    case 'inserir_matricula':
         include 'view/inserir_matricula.php';
         break;
     case 'deletar_aluno':
         include 'view/deletar_aluno.php';
-        break;    
+        break;
     default:
-    include 'view/home.php';
+        include 'view/home.php';
 }
 
 

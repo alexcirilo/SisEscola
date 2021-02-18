@@ -1,13 +1,16 @@
 <a class="btn btn-success" href="?pagina=inserir_aluno">Inserir novo aluno</a>
-<table class="table">
+<table class="table" id="alunos">
 <br><hr/>
+<thead>
 <tr>
     <th>Nome Aluno</th>
     <th>Data de Nascimento</th>
     <th>Deletar</th>
     <th>Editar</th>
 </tr>
+</thead>
 
+<tbody>
 <?php
     while($linha = mysqli_fetch_array($consulta_alunos)){
         echo "<tr>
@@ -23,4 +26,5 @@
 <?php
     }
 ?>
+</tbody>
 </table>

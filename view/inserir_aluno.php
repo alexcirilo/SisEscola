@@ -1,4 +1,4 @@
-<?php
+ <?php
 if (!isset($_GET['editar'])) { ?>
 
     <h1>Inserir novo Aluno</h1>
